@@ -1,0 +1,65 @@
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  background-color: #f6f9fc;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #e8b600;
+}
+
+.min-ht-container {
+  min-height: 80vh;
+}
+
+#home-body {
+  animation: fadeInAnimation ease-out 0.75s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background: black url("https://media.giphy.com/media/VseXvvxwowwCc/giphy.gif")
+    no-repeat center;
+  z-index: 99999;
+}
+
+#upper-section {
+  background: rgb(102, 10, 113);
+  background: -moz-linear-gradient(
+    45deg,
+    rgb(196, 196, 196) 10%,
+    rgba(114, 106, 149, 1) 55%,
+    rgba(223, 94, 136, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(102, 10, 113, 1) 10%,
+    rgba(114, 106, 149, 1) 55%,
+    rgba(223, 94, 136, 1) 100%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(102, 10, 113, 1) 10%,
+    rgba(114, 106, 149, 1) 55%,
+    rgba(223, 94, 136, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#660a71",endColorstr="#df5e88",GradientType=1);
+
+  position: relative;
+  z-index: 100;
+}
